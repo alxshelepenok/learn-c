@@ -58,7 +58,7 @@ int main() {
 	}
 
 	// Сортировка второй половины
-	for(i = N/2; i < N - 1; i++) { 
+	for(i = 0; i < N - 1; i++) { 
 		for(j = N/2; j < N - i - 1; j++) {  
 			if(arr[j] < arr[j+1]) {  
 				swap(&arr[j], &arr[j+1]);
