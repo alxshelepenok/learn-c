@@ -1,27 +1,23 @@
 #include <stdio.h>
 #include <time.h>
-#include <stdlib.h>
 
-const int N = 4;
-const int M = 6;
-
-int randInt(int min, int max) {
-	return min + rand()%max;
-}
+const int N = 2;
+const int M = 3;
 
 int main() {
 	int arr[N][M];
-	int i, j, colsCount;
+	int i, j, k;
 
-	srand(time(NULL));
-
+	// vvodim massiv
 	for (i = 0; i < N; i++) {
 		for (j = 0; j < M; j++) {
-			arr[i][j] = 0 + rand()%9;
+			printf("Arr[%d][%d]=", i, j);
+			scanf("%d", &arr[i][j]);
 		}
 	}
 
-	printf("Исходная матрица: \n");
+	// vividim massiv
+	printf("massiv: \n");
 	for (i = 0; i < N; i++) {
 		printf("| ");
 		for (j = 0; j < M; j++) {
@@ -30,18 +26,19 @@ int main() {
 		printf("|\n");
 	}
 
-	colsCount = M;
+	k = 0;
 
-	for (i = 0; i < N; i++) {
-		for (j = 0; j < M; j++) {
+	for (j = 0; j < M; j++) {
+		for (i = 0; i < N; i++) {
 			if (arr[i][j] == 0) {
-				colsCount--;
+				k++;
+				// prerivaem cicl
 				break;
 			}
 		}
 	}
 
-	printf("Колличество столбцов: %d\n", colsCount);
+	printf("Kolichestvo stolbtcov: %d\n", k);
 
 	return 0;
 }
