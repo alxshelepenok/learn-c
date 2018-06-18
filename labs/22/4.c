@@ -16,7 +16,7 @@ int main() {
 	int i, m, n;
 	long int sum = 0;
 
-	printf("Ввести интервал M до N: ");
+	printf("Enter interval: ");
 	scanf("%d %d", &m, &n);
 
 	for (i = m; i < n; i++) {
@@ -25,7 +25,7 @@ int main() {
 		}
 	}
 
-	printf("Сумма факториалов: %ld\n", sum);
+	printf("Factorial sum: %ld\n", sum);
 	
 	return 0;
 }

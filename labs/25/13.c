@@ -15,7 +15,6 @@ int randInt(int min, int max) {
 
 int T;
 
-
 /**
  * Функция sumIntMatrix() вычисляет сумму элементов двумерного массива.
  * @param int* arr адрес объекта
