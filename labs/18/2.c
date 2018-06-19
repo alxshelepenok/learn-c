@@ -13,8 +13,10 @@ int main() {
 	if (a != b && a != c && a != d && b != c && b != d && c != d) {
 		*pointer = a + b + c + d;
 	} else if (a == b && c == d) {
-		*pointer = 4*a;
+		*pointer = (a + b) * (c + d);
 	} else if (a == b && a == c && a == d && b == c && b == d && c == d) {
+		*pointer = 4*a;
+	} else {
 		*pointer = (a - b) * (c - d);
 	}
 
