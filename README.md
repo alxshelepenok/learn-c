@@ -1,4 +1,4 @@
-# learn_c
+# learn-c
 
 All C code for learning.
 
